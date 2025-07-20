@@ -14,7 +14,7 @@ import { EvolutionModule } from './evolution/evolution.module';
           ? join('/data', 'sqlite.db')
           : join(__dirname, '..', 'sqlite.db'),
       entities: [join(__dirname, '**', '*.entity.{ts,js}')],
-      synchronize: process.env.NODE_ENV !== 'production',
+      synchronize: true,
       autoLoadEntities: true,
     }),
     PokemonModule,
